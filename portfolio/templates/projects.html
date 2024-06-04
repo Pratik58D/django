@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}Projects {% endblock%}
+
+{% block body %}
+
+   
+  
+      <div class="container my-3 mx-3">
+        <h2 class="text-center my-3 my-3">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{%static '/image/img5.avif' %}"
+                        class="card-img-top" alt="image is here" style="width: 287px; height:300px ;">
+                    <div class="card-body">
+                        <h5 class="card-title">Front End</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{%static '/image/image1.jpg' %}"
+                        class="card-img-top" alt="image is here" style="width: 287px; height:300px ;">
+                    <div class="card-body">
+                        <h5 class="card-title">Back End</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{%static '/image/img5.avif' %}"
+                        class="card-img-top" alt="image is here" style="width: 287px; height:300px ;">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+           
+       
+        </div>
+    </div>
+
+  
+    {% endblock body %}

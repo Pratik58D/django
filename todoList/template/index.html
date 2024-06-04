@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block homeactive %}active{% endblock homeactive %}
+{% block body %}
+
+succ is {{success}}
+  <form class="container my-3" action="/" method="post">
+  <h2 class = "text-center">This is ToDos list -- Add a Task</h2>
+    {% csrf_token %} 
+  <div class="mb-3">
+    <label for="title">Task Title</label>
+    <input type="text" class="form-control" id="title"  name = "title">
+  </div>
+  <div class="mb-3">
+    <label for="desc">Task Description</label>
+    <textarea class="form-control" id="desc" rows="10" name="desc"></textarea>
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+  </div>
+</form>
+  </div>
+
+  {% endblock body %}
